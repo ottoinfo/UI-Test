@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "build": "npm run clean && webpack --display-error-details",
-    "clean": "rm -rf ./dist"
-    "index": "cp ./public/index.html ./dist/"
+    "clean": "rm -rf ./dist/*",
+    "index": "cp ./public/index.html ./dist/",
     "dev": "webpack-dev-server --display-error-details --progress --colors --inline --hot",
     "deploy:gh": "gh-pages -d dist"
   },
@@ -49,8 +49,12 @@
     "file": "^0.2.2",
     "file-loader": "^0.9.0",
     "gh-pages": "^0.11.0",
+    "handlebars": "^4.0.5",
+    "handlebars-loader": "^1.3.0",
+    "html-webpack-plugin": "^2.22.0",
     "node-sass": "^3.8.0",
     "postcss-loader": "^0.9.1",
+    "purecss": "^0.6.0",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",

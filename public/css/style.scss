@@ -1,7 +1,15 @@
+@import "~purecss";
+
 // Variables
-$border: 1px solid #333;
-$color: #333;
-$orange: #f00;
+$radius: 7px;
+$border: 1px solid rgb(199,204,209);
+$white: #fff;
+$orange: rgb(244,159,61); // Error || Button
+$blue:  rgb(24,96,177); // Link
+$black: rgb(50,50,51); // Title || Form
+$grey: rgb(86,87,88); // Text
+$light-grey: rgb(167,16,170); // Rmove Roomate
+
 // Reset
 * {
   vertical-align: middle;
@@ -20,12 +28,60 @@ $orange: #f00;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 16px;
-  color: $color;
+  color: $grey;
   margin: 10px;
   width: 900px;
   height: 100px;
   form {
+    @extend .pure-form;
+    @extend .pure-form-aligned;
     background: #eee;
     border: $border;
+    padding: 40px;
   }
+}
+
+#alert {
+  form {
+    background: $white;
+    border-radius: $radius;
+    legend {
+      text-align: center;
+      .title {
+        color: $black;
+        font-weight: 500;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+.btns {
+  margin-top: 30px;
+  button {
+    + button {
+      margin-left: 10px;
+    }
+  }
+}
+
+.btn {
+  @extend .pure-button;
+  padding: 15px 25px;
+  border-radius: $radius;
+  border: $border;
+  background: $white;
+  color: $grey;
+  &.blue {
+    background: $blue;
+    color: $white;
+  }
+  &.orange {
+    background: $orange;
+    color: $white;
+  }
+}
+
+.link {
+
 }
