@@ -1,10 +1,12 @@
 {
-  "name": "UI Test",
+  "name": "UI-Test",
   "version": "1.0.0",
-  "description": "FF Feature",
+  "description": "Popup Alert",
   "main": "src/index.js",
   "scripts": {
-    "build": "webpack --display-error-details",
+    "build": "npm run clean && webpack --display-error-details",
+    "clean": "rm -rf ./dist"
+    "index": "cp ./public/index.html ./dist/"
     "dev": "webpack-dev-server --display-error-details --progress --colors --inline --hot",
     "deploy:gh": "gh-pages -d dist"
   },
@@ -22,6 +24,7 @@
     "react-dom": "^15.2.1"
   },
   "devDependencies": {
+    "autoprefixer": "^6.3.7",
     "babel-cli": "^6.10.1",
     "babel-core": "^6.10.4",
     "babel-eslint": "^6.1.2",
@@ -46,7 +49,12 @@
     "file": "^0.2.2",
     "file-loader": "^0.9.0",
     "gh-pages": "^0.11.0",
+    "node-sass": "^3.8.0",
+    "postcss-loader": "^0.9.1",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "webpack-validator": "^2.2.6"
   }
 }
