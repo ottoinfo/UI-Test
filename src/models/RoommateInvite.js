@@ -1,7 +1,9 @@
 import { observable, computed } from "mobx"
+import uuid from "uuid"
 
 export default class RoommateInvite {
   // Model Attributes
+  uuid = uuid.v4()
   @observable first_name = ""
   @observable last_name = ""
   @observable email = ""
@@ -35,8 +37,8 @@ export default class RoommateInvite {
 
   validate = ()=> {
     this.errors = {}
-    this.validateFirstName()
-    this.validateLastName()
+    // this.validateFirstName()
+    // this.validateLastName()
     this.validateEmail()
     return Object.keys(this.errors).length
   }
@@ -49,7 +51,20 @@ export default class RoommateInvite {
     }
   }
 
+  findInvitee = () => {
+    return this.store.roommates.findIndex((roommate)=> roommate.uuid === this.uuid)
+  }
+
   @computed get fullName() {
     return `${this.first_name} ${this.last_name}`
+  }
+
+  @computed get userNumber() {
+    if (this.email.length) {
+      return `( ${this.email} )`
+    }
+    else {
+      return `#${this.email || this.findInvitee() + 1}`
+    }
   }
 }

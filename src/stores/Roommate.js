@@ -2,6 +2,7 @@ import { observable } from "mobx"
 import Roommate from "../models/RoommateInvite"
 
 class RoommateStore {
+  @observable visible = false
   @observable roommates = []
   @observable errors = {}
 

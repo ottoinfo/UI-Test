@@ -48,6 +48,9 @@ $light-grey: rgb(158,160,162); // Rmove Roomate
 }
 
 #alert {
+  span {
+    vertical-align: top;
+  }
   form {
     width: 480px;
     position: relative;
@@ -58,14 +61,18 @@ $light-grey: rgb(158,160,162); // Rmove Roomate
       font-weight: 500;
       color: $grey;
       border: none;
+      margin: 0;
       p {
         font-size: 1em;
+        margin: 10px 0 0;
       }
       .title {
         color: $black;
         font-size: 1.5em;
-        margin-bottom: 10px;
       }
+    }
+    fieldset {
+      margin: 0 0 20px;
     }
     .close {
       position: absolute;
@@ -81,23 +88,28 @@ $light-grey: rgb(158,160,162); // Rmove Roomate
       color: $blue;
       font-weight: 500;
       opacity: 0.7;
+      margin: 0;
       &:hover {
         opacity: 1;
+      }
+      span {
+        margin-right: 10px;
       }
     }
   }
   .roommate {
     .remove {
       display: block;
-      padding-bottom: 20px;
-      margin-bottom: 20px;
+      padding-bottom: 10px;
+      margin: 20px 0 0;
       border-bottom: $border;
       font-weight: 500;
       span {
-        vertical-align: top;
+        margin-right: 10px;
       }
     }
     .one-col, .two-col {
+      margin-top: $padding;
       position: relative;
       label {
         font-size: 0.857em;
@@ -141,14 +153,20 @@ $light-grey: rgb(158,160,162); // Rmove Roomate
       }
     }
     p.error {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      margin: 0;
       color: $orange;
-      font-size: 0.857em;
+      font-size: 0.750em;
     }
   }
 }
 
 .btns {
+  border-top: $border;
   margin-top: 30px;
+  padding-top: 30px;
   button {
     + button {
       margin-left: 10px;

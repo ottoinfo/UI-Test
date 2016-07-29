@@ -32,7 +32,7 @@ export default class Roommate extends React.Component {
     const { roommate } = this
     return (
       <div className="roommate">
-        <a className="remove" onClick={this.handleRemove}>X Remove roommate <span>{ roommate.fullName }</span></a>
+        <a className="remove" onClick={this.handleRemove}><span>X</span> Remove roommate <span>{ roommate.userNumber }</span></a>
         <div className={ roommate.errors.first_name ? "two-col error" : "two-col" }>
           <label htmlFor="first_name">First Name</label>
           <input type="text" name="first_name" value={roommate.first_name} onChange={this.handleInputChange}/>

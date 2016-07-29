@@ -11,7 +11,7 @@ const PATHS = {
   build: path.join(__dirname, "dist"),
   hbs: [ path.join(__dirname, "public") ],
   js: [ path.join(__dirname, "src") ],
-  public: "/UI-Test/", //"//" GH Pages
+  public: "/", //"/UI-Test/" GH Pages
   style: [ path.join(__dirname, "public", "css", "style.scss") ],
 }
 
