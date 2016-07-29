@@ -57,9 +57,14 @@ $light-grey: rgb(158,160,162); // Rmove Roomate
       text-align: center;
       font-weight: 500;
       color: $grey;
+      border: none;
+      p {
+        font-size: 1em;
+      }
       .title {
         color: $black;
         font-size: 1.5em;
+        margin-bottom: 10px;
       }
     }
     .close {
