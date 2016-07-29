@@ -29,7 +29,7 @@ Should we store or create roomates join table. So when users join the site we ca
 What Did you use for this?
 --------------------------
 
-Not Codepen. First I didn't want to try to work in limited real estate and I thought this was more that a prototype. I wanted to write this in a way that I could see my code and demonstrate how I normally work. I also didn't want to have to use CDN's for the code sources I wanted.
+Not Codepen. First I didn't want to try to work in limited real estate and I thought this was more then a prototype example. To me this is definetly a ***"FEATURE"***. I wanted to write this in a way that I could see my code and demonstrate how I normally work. I also didn't want to have to use CDN's for the code sources I wanted.
 
 [Webpack](https://github.com/webpack) for building and testing server. I spent probably a hour setting up this portion. Just making sure I had all the assets needed and build would succeed.
 
