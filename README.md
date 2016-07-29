@@ -47,6 +47,7 @@ Features:
 ---------
   * Not clearing out current roommates. Just not worried currently
   * WIP: If you delete a user in the middle or before app will INDEX incorrectly
+  * Focus Input - Need to setup focus in when clicking around input
 
 Install/Run Locally
 -------------------
