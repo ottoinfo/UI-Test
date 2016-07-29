@@ -3,6 +3,12 @@ UI Test Project
 
 Working Example [GitHub App](https://ottoinfo.github.io/UI-Test/)
 
+***BUG*** 
+---------
+
+WIP: If you delete a user in the middle or before INDEX's incorrectly
+
+
 Check WebBrowser Console for JSON Data ( Need to move into a Alert )
 
 [CodePen Challenge](http://codepen.io/ottoinfo/pen/RRBKZR)
