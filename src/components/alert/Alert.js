@@ -8,8 +8,8 @@ import { Motion, spring } from "react-motion" // noWobble gentle wobbly stiff
 export default class Alert extends React.Component {
 
   static propTypes = {
-    visible: React.PropTypes.boolean,
-    onClose: React.PropTypes.function,
+    visible: React.PropTypes.bool,
+    onClose: React.PropTypes.func,
   }
 
   componentDidMount() {
@@ -18,12 +18,7 @@ export default class Alert extends React.Component {
   }
 
   componentDidUpdate() {
-    console.log("did update", this.props)
     RoommateStore.visible = this.props.visible
-  }
-
-  componentWillUpdate() {
-    console.log("will update")
   }
 
   handleAdd = (ev)=> {
@@ -34,7 +29,7 @@ export default class Alert extends React.Component {
   handleSubmit = (ev)=>{
     ev.preventDefault()
     if (RoommateStore.validateModels()) {
-      console.log(RoommateStore.asJSON())
+      alert(JSON.stringify(RoommateStore.asJSON()))
     }
   }
 
@@ -55,10 +50,10 @@ export default class Alert extends React.Component {
         opacity: spring(0),
       },
     }
-
+    const roommates = RoommateStore.getRoommates()
     return (
       <Motion defaultStyle={ style.default } key="test" style={ (RoommateStore.visible ? style.enter : style.leave) }>
-        { ({ opacity, y }) =>
+        { ({ opacity }) =>
           <div id="alert" style={ { opacity } }>
             <form>
               <a className="close" onClick={this.handleClose}>X</a>
@@ -68,18 +63,18 @@ export default class Alert extends React.Component {
               </legend>
 
               <fieldset>
-                { RoommateStore.getRoommates().map((roommate, i) =>
+                { roommates.map((roommate, i) =>
                   <Roommate key={i} roommate={roommate}/>
                 ) }
               </fieldset>
 
-            { (RoommateStore.getRoommates().length < 5) &&
+            { (roommates.length < 5) &&
               <a className="add" onClick={this.handleAdd}><span>+</span> Add another roommate</a>
             }
 
               <div className="btns">
                  <button className="btn" onClick={this.handleClose}>Nevermind</button>
-              { (RoommateStore.getRoommates().length != 0) &&
+              { (roommates.length != 0) &&
                  <button className="btn orange" onClick={this.handleSubmit}>Send Invites</button>
               }
               </div>

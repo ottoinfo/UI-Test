@@ -10,29 +10,31 @@ class RoommateStore {
     Object.assign(this, args)
   }
 
-  createModel = (user={})=> {
-    return new Roommate(user, this)
+  createModel = (roommate={})=> {
+    return new Roommate(roommate, this)
   }
 
-  addRoommate(user) {
-    this.roommates.push(this.createModel(user))
+  addRoommate(roommate) {
+    this.roommates.push(this.createModel(roommate))
   }
 
   updateRoommate(json) {
-    const user = this.findRoommate(json.id)
-    if (!user) {
+    const roommate = this.findRoommate(json.uuid)
+    if (!roommate) {
       this.addRoommate(json)
     }
     else {
-      user.updateRoommate(json)
+      roommate.updateRoommate(json)
     }
   }
 
-  removeRoommate(user) {
-    this.roommates.splice(this.roommates.findIndex((obj)=> obj.id == user.id), 1)
+  removeRoommate(roommate) {
+    console.log("remove", roommate.uuid, this.roommates.findIndex((obj)=> obj.uuid == roommate.uuid))
+    this.roommates.splice(this.roommates.findIndex((obj)=> obj.uuid == roommate.uuid), 1)
   }
 
   getRoommates = ()=> {
+    console.log("get")
     return this.roommates.slice()
   }
 

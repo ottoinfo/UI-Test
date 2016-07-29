@@ -1,19 +1,18 @@
 import React from "react"
+import { observer } from "mobx-react"
+import UIStore from "../stores/UIStore"
 import Alert from "./alert/Alert"
 
+@observer
 export default class App extends React.Component {
-
-  state = {
-    visible: true,
-  }
 
   handleInvite = (ev)=> {
     ev.preventDefault()
-    this.setState({ visible: true })
+    UIStore.visible = true
   }
 
   handleClose = () => {
-    this.setState({ visible: false }) 
+    UIStore.visible = false
   }
 
   render() {
@@ -24,7 +23,7 @@ export default class App extends React.Component {
           <p>So you found the right place. Invite your roomates.</p>
           <button className="btn blue">Invite</button>
         </form>
-        <Alert visible={this.state.visible} onClose={this.handleClose}/>
+        <Alert visible={UIStore.visible} onClose={this.handleClose}/>
       </div>
     )
   }

@@ -7,7 +7,6 @@ export default class Roommate extends React.Component {
   handleInputChange = (ev)=> {
     const { target } = ev
     this.roommate[target.name] = target.value
-    console.log("input", this.roommate)
   }
 
   static propTypes = {

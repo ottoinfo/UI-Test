@@ -12,6 +12,7 @@ export default class RoommateInvite {
   store = null
 
   constructor(data={}, store) {
+    console.log("con", this.uuid)
     Object.assign(this, data)
     this.store = store
   }
@@ -40,7 +41,7 @@ export default class RoommateInvite {
     // this.validateFirstName()
     // this.validateLastName()
     this.validateEmail()
-    return Object.keys(this.errors).length
+    return !Object.keys(this.errors).length
   }
 
   asJSON = ()=> {
@@ -52,7 +53,8 @@ export default class RoommateInvite {
   }
 
   findInvitee = () => {
-    return this.store.roommates.findIndex((roommate)=> roommate.uuid === this.uuid)
+    console.log("find", this.store.roommates.findIndex((roommate)=> roommate.uuid === this.uuid) + 1 )
+    return this.store.roommates.findIndex((roommate)=> roommate.uuid === this.uuid) + 1
   }
 
   @computed get fullName() {
@@ -64,7 +66,7 @@ export default class RoommateInvite {
       return `( ${this.email} )`
     }
     else {
-      return `#${this.email || this.findInvitee() + 1}`
+      return `#${this.findInvitee()}`
     }
   }
 }
