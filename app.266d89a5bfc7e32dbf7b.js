@@ -21089,23 +21089,10 @@
 /* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=undefined;var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(2);var _react2=_interopRequireDefault(_react);var _Alert=__webpack_require__(174);var _Alert2=_interopRequireDefault(_Alert);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var App=function(_React$Component){_inherits(App,_React$Component);function App(){var _Object$getPrototypeO;var _temp,_this,_ret;_classCallCheck(this,App);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_Object$getPrototypeO=Object.getPrototypeOf(App)).call.apply(_Object$getPrototypeO,[this].concat(args))),_this),_this.state={visible:true},_this.handleInvite=function(ev){ev.preventDefault();_this.setState({visible:true});},_this.handleClose=function(){_this.setState({visible:false});},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(App,[{key:"render",value:function render(){console.log("render",this.state);return _react2.default.createElement("div",{id:"wrapper"},_react2.default.createElement("form",{onSubmit:this.handleInvite},_react2.default.createElement("p",null,"So you found the right place. Invite your roomates."),_react2.default.createElement("button",{className:"btn blue"},"Invite")),_react2.default.createElement(_Alert2.default,{visible:this.state.visible,onClose:this.handleClose}));}}]);return App;}(_react2.default.Component);exports.default=App;
+	"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=undefined;var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _class;var _react=__webpack_require__(2);var _react2=_interopRequireDefault(_react);var _mobxReact=__webpack_require__(174);var _UIStore=__webpack_require__(176);var _UIStore2=_interopRequireDefault(_UIStore);var _Alert=__webpack_require__(177);var _Alert2=_interopRequireDefault(_Alert);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var App=(0,_mobxReact.observer)(_class=function(_React$Component){_inherits(App,_React$Component);function App(){var _Object$getPrototypeO;var _temp,_this,_ret;_classCallCheck(this,App);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_Object$getPrototypeO=Object.getPrototypeOf(App)).call.apply(_Object$getPrototypeO,[this].concat(args))),_this),_this.handleInvite=function(ev){ev.preventDefault();_UIStore2.default.visible=true;},_this.handleClose=function(){_UIStore2.default.visible=false;},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(App,[{key:"render",value:function render(){console.log("render",this.state);return _react2.default.createElement("div",{id:"wrapper"},_react2.default.createElement("form",{onSubmit:this.handleInvite},_react2.default.createElement("p",null,"So you found the right place. Invite your roomates."),_react2.default.createElement("button",{className:"btn blue"},"Invite")),_react2.default.createElement(_Alert2.default,{visible:_UIStore2.default.visible,onClose:this.handleClose}));}}]);return App;}(_react2.default.Component))||_class;exports.default=App;
 
 /***/ },
 /* 174 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=undefined;var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _class,_class2,_temp2;var _react=__webpack_require__(2);var _react2=_interopRequireDefault(_react);var _Roommate=__webpack_require__(175);var _Roommate2=_interopRequireDefault(_Roommate);var _Roommate3=__webpack_require__(178);var _Roommate4=_interopRequireDefault(_Roommate3);var _mobxReact=__webpack_require__(176);var _reactMotion=__webpack_require__(182);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// noWobble gentle wobbly stiff
-	var Alert=(0,_mobxReact.observer)(_class=(_temp2=_class2=function(_React$Component){_inherits(Alert,_React$Component);function Alert(){var _Object$getPrototypeO;var _temp,_this,_ret;_classCallCheck(this,Alert);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_Object$getPrototypeO=Object.getPrototypeOf(Alert)).call.apply(_Object$getPrototypeO,[this].concat(args))),_this),_this.handleAdd=function(ev){ev.preventDefault();_Roommate4.default.addRoommate();},_this.handleSubmit=function(ev){ev.preventDefault();if(_Roommate4.default.validateModels()){console.log(_Roommate4.default.asJSON());}},_this.handleClose=function(ev){ev.preventDefault();_this.props.onClose();},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(Alert,[{key:"componentDidMount",value:function componentDidMount(){_Roommate4.default.visible=this.props.visible;_Roommate4.default.addRoommate();}},{key:"componentDidUpdate",value:function componentDidUpdate(){console.log("did update",this.props);_Roommate4.default.visible=this.props.visible;}},{key:"componentWillUpdate",value:function componentWillUpdate(){console.log("will update");}},{key:"render",value:function render(){var _this2=this;var style={default:{opacity:0},enter:{opacity:(0,_reactMotion.spring)(1,{stiffness:45,damping:10})},leave:{opacity:(0,_reactMotion.spring)(0)}};return _react2.default.createElement(_reactMotion.Motion,{defaultStyle:style.default,key:"test",style:_Roommate4.default.visible?style.enter:style.leave},function(_ref){var opacity=_ref.opacity;var y=_ref.y;return _react2.default.createElement("div",{id:"alert",style:{opacity:opacity}},_react2.default.createElement("form",null,_react2.default.createElement("a",{className:"close",onClick:_this2.handleClose},"X"),_react2.default.createElement("legend",null,_react2.default.createElement("p",{className:"title"},"Invite roomates"),_react2.default.createElement("p",null,"We'll send your roommates an invite after you've",_react2.default.createElement("br",null),"finished setting up your rent payment.")),_react2.default.createElement("fieldset",null,_Roommate4.default.getRoommates().map(function(roommate,i){return _react2.default.createElement(_Roommate2.default,{key:i,roommate:roommate});})),_Roommate4.default.getRoommates().length<5&&_react2.default.createElement("a",{className:"add",onClick:_this2.handleAdd},_react2.default.createElement("span",null,"+")," Add another roommate"),_react2.default.createElement("div",{className:"btns"},_react2.default.createElement("button",{className:"btn",onClick:_this2.handleClose},"Nevermind"),_Roommate4.default.getRoommates().length!=0&&_react2.default.createElement("button",{className:"btn orange",onClick:_this2.handleSubmit},"Send Invites"))));});}}]);return Alert;}(_react2.default.Component),_class2.propTypes={visible:_react2.default.PropTypes.boolean,onClose:_react2.default.PropTypes.function},_temp2))||_class;exports.default=Alert;
-
-/***/ },
-/* 175 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=undefined;var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _class,_class2,_temp;var _react=__webpack_require__(2);var _react2=_interopRequireDefault(_react);var _mobxReact=__webpack_require__(176);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Roommate=(0,_mobxReact.observer)(_class=(_temp=_class2=function(_React$Component){_inherits(Roommate,_React$Component);function Roommate(props,context){_classCallCheck(this,Roommate);var _this=_possibleConstructorReturn(this,Object.getPrototypeOf(Roommate).call(this,props,context));_this.handleInputChange=function(ev){var target=ev.target;_this.roommate[target.name]=target.value;console.log("input",_this.roommate);};_this.checkValidation=function(ev){console.log(ev);};_this.handleRemove=function(ev){ev.preventDefault();_this.roommate.store.removeRoommate(_this.roommate);};_this.roommate=props.roommate;return _this;}_createClass(Roommate,[{key:"render",value:function render(){var roommate=this.roommate;return _react2.default.createElement("div",{className:"roommate"},_react2.default.createElement("a",{className:"remove",onClick:this.handleRemove},_react2.default.createElement("span",null,"X")," Remove roommate ",_react2.default.createElement("span",null,roommate.userNumber)),_react2.default.createElement("div",{className:roommate.errors.first_name?"two-col error":"two-col"},_react2.default.createElement("label",{htmlFor:"first_name"},"First Name"),_react2.default.createElement("input",{type:"text",name:"first_name",value:roommate.first_name,onChange:this.handleInputChange}),_react2.default.createElement("p",{className:"error"},roommate.errors.first_name)),_react2.default.createElement("div",{className:roommate.errors.last_name?"two-col error":"two-col"},_react2.default.createElement("label",{htmlFor:"last_name"},"Last Name"),_react2.default.createElement("input",{type:"text",name:"last_name",value:roommate.last_name,onChange:this.handleInputChange}),_react2.default.createElement("p",{className:"error"},roommate.errors.last_name)),_react2.default.createElement("div",{className:roommate.errors.email?"one-col error":"one-col"},_react2.default.createElement("label",{htmlFor:"email"},"Email Address"),_react2.default.createElement("input",{onBlur:this.checkValidation,type:"text",name:"email",value:roommate.email,onChange:this.handleInputChange}),_react2.default.createElement("p",{className:"error"},roommate.errors.email)));}}]);return Roommate;}(_react2.default.Component),_class2.propTypes={roommate:_react2.default.PropTypes.object},_temp))||_class;exports.default=Roommate;
-
-/***/ },
-/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	(function() {
@@ -21501,7 +21488,7 @@
 	     * UMD
 	     */
 	    if (true) {
-	        module.exports = mrFactory(__webpack_require__(177), __webpack_require__(2), __webpack_require__(34));
+	        module.exports = mrFactory(__webpack_require__(175), __webpack_require__(2), __webpack_require__(34));
 	    } else if (typeof define === 'function' && define.amd) {
 	        define('mobx-react', ['mobx', 'react', 'react-dom'], mrFactory);
 	    } else {
@@ -21511,7 +21498,7 @@
 
 
 /***/ },
-/* 177 */
+/* 175 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {"use strict";
@@ -24055,23 +24042,42 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
+/* 176 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";Object.defineProperty(exports,"__esModule",{value:true});var _desc,_value,_class,_descriptor;var _mobx=__webpack_require__(175);function _initDefineProp(target,property,descriptor,context){if(!descriptor)return;Object.defineProperty(target,property,{enumerable:descriptor.enumerable,configurable:descriptor.configurable,writable:descriptor.writable,value:descriptor.initializer?descriptor.initializer.call(context):void 0});}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _applyDecoratedDescriptor(target,property,decorators,descriptor,context){var desc={};Object['ke'+'ys'](descriptor).forEach(function(key){desc[key]=descriptor[key];});desc.enumerable=!!desc.enumerable;desc.configurable=!!desc.configurable;if('value'in desc||desc.initializer){desc.writable=true;}desc=decorators.slice().reverse().reduce(function(desc,decorator){return decorator(target,property,desc)||desc;},desc);if(context&&desc.initializer!==void 0){desc.value=desc.initializer?desc.initializer.call(context):void 0;desc.initializer=undefined;}if(desc.initializer===void 0){Object['define'+'Property'](target,property,desc);desc=null;}return desc;}function _initializerWarningHelper(descriptor,context){throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');}var UIStore=(_class=function UIStore(){_classCallCheck(this,UIStore);_initDefineProp(this,"visible",_descriptor,this);},(_descriptor=_applyDecoratedDescriptor(_class.prototype,"visible",[_mobx.observable],{enumerable:true,initializer:function initializer(){return false;}})),_class);var singleton=new UIStore();exports.default=singleton;
+
+/***/ },
+/* 177 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=undefined;var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _class,_class2,_temp2;var _react=__webpack_require__(2);var _react2=_interopRequireDefault(_react);var _Roommate=__webpack_require__(178);var _Roommate2=_interopRequireDefault(_Roommate);var _Roommate3=__webpack_require__(179);var _Roommate4=_interopRequireDefault(_Roommate3);var _mobxReact=__webpack_require__(174);var _reactMotion=__webpack_require__(183);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}// noWobble gentle wobbly stiff
+	var Alert=(0,_mobxReact.observer)(_class=(_temp2=_class2=function(_React$Component){_inherits(Alert,_React$Component);function Alert(){var _Object$getPrototypeO;var _temp,_this,_ret;_classCallCheck(this,Alert);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_Object$getPrototypeO=Object.getPrototypeOf(Alert)).call.apply(_Object$getPrototypeO,[this].concat(args))),_this),_this.handleAdd=function(ev){ev.preventDefault();_Roommate4.default.addRoommate();},_this.handleSubmit=function(ev){ev.preventDefault();if(_Roommate4.default.validateModels()){alert(JSON.stringify(_Roommate4.default.asJSON()));}},_this.handleClose=function(ev){ev.preventDefault();_this.props.onClose();},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(Alert,[{key:"componentDidMount",value:function componentDidMount(){_Roommate4.default.visible=this.props.visible;_Roommate4.default.addRoommate();}},{key:"componentDidUpdate",value:function componentDidUpdate(){_Roommate4.default.visible=this.props.visible;}},{key:"render",value:function render(){var _this2=this;var style={default:{opacity:0},enter:{opacity:(0,_reactMotion.spring)(1,{stiffness:45,damping:10})},leave:{opacity:(0,_reactMotion.spring)(0)}};var roommates=_Roommate4.default.getRoommates();return _react2.default.createElement(_reactMotion.Motion,{defaultStyle:style.default,key:"test",style:_Roommate4.default.visible?style.enter:style.leave},function(_ref){var opacity=_ref.opacity;return _react2.default.createElement("div",{id:"alert",style:{opacity:opacity}},_react2.default.createElement("form",null,_react2.default.createElement("a",{className:"close",onClick:_this2.handleClose},"X"),_react2.default.createElement("legend",null,_react2.default.createElement("p",{className:"title"},"Invite roomates"),_react2.default.createElement("p",null,"We'll send your roommates an invite after you've",_react2.default.createElement("br",null),"finished setting up your rent payment.")),_react2.default.createElement("fieldset",null,roommates.map(function(roommate,i){return _react2.default.createElement(_Roommate2.default,{key:i,roommate:roommate});})),roommates.length<5&&_react2.default.createElement("a",{className:"add",onClick:_this2.handleAdd},_react2.default.createElement("span",null,"+")," Add another roommate"),_react2.default.createElement("div",{className:"btns"},_react2.default.createElement("button",{className:"btn",onClick:_this2.handleClose},"Nevermind"),roommates.length!=0&&_react2.default.createElement("button",{className:"btn orange",onClick:_this2.handleSubmit},"Send Invites"))));});}}]);return Alert;}(_react2.default.Component),_class2.propTypes={visible:_react2.default.PropTypes.bool,onClose:_react2.default.PropTypes.func},_temp2))||_class;exports.default=Alert;
+
+/***/ },
 /* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _desc,_value,_class,_descriptor,_descriptor2,_descriptor3;var _mobx=__webpack_require__(177);var _RoommateInvite=__webpack_require__(179);var _RoommateInvite2=_interopRequireDefault(_RoommateInvite);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _initDefineProp(target,property,descriptor,context){if(!descriptor)return;Object.defineProperty(target,property,{enumerable:descriptor.enumerable,configurable:descriptor.configurable,writable:descriptor.writable,value:descriptor.initializer?descriptor.initializer.call(context):void 0});}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _applyDecoratedDescriptor(target,property,decorators,descriptor,context){var desc={};Object['ke'+'ys'](descriptor).forEach(function(key){desc[key]=descriptor[key];});desc.enumerable=!!desc.enumerable;desc.configurable=!!desc.configurable;if('value'in desc||desc.initializer){desc.writable=true;}desc=decorators.slice().reverse().reduce(function(desc,decorator){return decorator(target,property,desc)||desc;},desc);if(context&&desc.initializer!==void 0){desc.value=desc.initializer?desc.initializer.call(context):void 0;desc.initializer=undefined;}if(desc.initializer===void 0){Object['define'+'Property'](target,property,desc);desc=null;}return desc;}function _initializerWarningHelper(descriptor,context){throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');}var RoommateStore=(_class=function(){function RoommateStore(){var _this=this;_classCallCheck(this,RoommateStore);_initDefineProp(this,"visible",_descriptor,this);_initDefineProp(this,"roommates",_descriptor2,this);_initDefineProp(this,"errors",_descriptor3,this);this.createModel=function(){var user=arguments.length<=0||arguments[0]===undefined?{}:arguments[0];return new _RoommateInvite2.default(user,_this);};this.getRoommates=function(){return _this.roommates.slice();};this.validateModels=function(){var pass=true;_this.roommates.map(function(roommate){if(!roommate.validate()){pass=false;}});return pass;};this.asJSON=function(){var json=[];_this.roommates.map(function(roommate){json.push(roommate.asJSON());});return json;};this.handleErrors=function(resp){var data={};resp.errors.map(function(item){return data[item.field]=item.message;});_this.errors=data;};}_createClass(RoommateStore,[{key:"setup",value:function setup(args){Object.assign(this,args);}},{key:"addRoommate",value:function addRoommate(user){this.roommates.push(this.createModel(user));}},{key:"updateRoommate",value:function updateRoommate(json){var user=this.findRoommate(json.id);if(!user){this.addRoommate(json);}else{user.updateRoommate(json);}}},{key:"removeRoommate",value:function removeRoommate(user){this.roommates.splice(this.roommates.findIndex(function(obj){return obj.id==user.id;}),1);}}]);return RoommateStore;}(),(_descriptor=_applyDecoratedDescriptor(_class.prototype,"visible",[_mobx.observable],{enumerable:true,initializer:function initializer(){return false;}}),_descriptor2=_applyDecoratedDescriptor(_class.prototype,"roommates",[_mobx.observable],{enumerable:true,initializer:function initializer(){return[];}}),_descriptor3=_applyDecoratedDescriptor(_class.prototype,"errors",[_mobx.observable],{enumerable:true,initializer:function initializer(){return{};}})),_class);var singleton=new RoommateStore();exports.default=singleton;
+	"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=undefined;var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _class,_class2,_temp;var _react=__webpack_require__(2);var _react2=_interopRequireDefault(_react);var _mobxReact=__webpack_require__(174);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Roommate=(0,_mobxReact.observer)(_class=(_temp=_class2=function(_React$Component){_inherits(Roommate,_React$Component);function Roommate(props,context){_classCallCheck(this,Roommate);var _this=_possibleConstructorReturn(this,Object.getPrototypeOf(Roommate).call(this,props,context));_this.handleInputChange=function(ev){var target=ev.target;_this.roommate[target.name]=target.value;};_this.checkValidation=function(ev){console.log(ev);};_this.handleRemove=function(ev){ev.preventDefault();_this.roommate.store.removeRoommate(_this.roommate);};_this.roommate=props.roommate;return _this;}_createClass(Roommate,[{key:"render",value:function render(){var roommate=this.roommate;return _react2.default.createElement("div",{className:"roommate"},_react2.default.createElement("a",{className:"remove",onClick:this.handleRemove},_react2.default.createElement("span",null,"X")," Remove roommate ",_react2.default.createElement("span",null,roommate.userNumber)),_react2.default.createElement("div",{className:roommate.errors.first_name?"two-col error":"two-col"},_react2.default.createElement("label",{htmlFor:"first_name"},"First Name"),_react2.default.createElement("input",{type:"text",name:"first_name",value:roommate.first_name,onChange:this.handleInputChange}),_react2.default.createElement("p",{className:"error"},roommate.errors.first_name)),_react2.default.createElement("div",{className:roommate.errors.last_name?"two-col error":"two-col"},_react2.default.createElement("label",{htmlFor:"last_name"},"Last Name"),_react2.default.createElement("input",{type:"text",name:"last_name",value:roommate.last_name,onChange:this.handleInputChange}),_react2.default.createElement("p",{className:"error"},roommate.errors.last_name)),_react2.default.createElement("div",{className:roommate.errors.email?"one-col error":"one-col"},_react2.default.createElement("label",{htmlFor:"email"},"Email Address"),_react2.default.createElement("input",{onBlur:this.checkValidation,type:"text",name:"email",value:roommate.email,onChange:this.handleInputChange}),_react2.default.createElement("p",{className:"error"},roommate.errors.email)));}}]);return Roommate;}(_react2.default.Component),_class2.propTypes={roommate:_react2.default.PropTypes.object},_temp))||_class;exports.default=Roommate;
 
 /***/ },
 /* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=undefined;var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _desc,_value,_class,_descriptor,_descriptor2,_descriptor3,_descriptor4;var _mobx=__webpack_require__(177);var _uuid=__webpack_require__(180);var _uuid2=_interopRequireDefault(_uuid);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _initDefineProp(target,property,descriptor,context){if(!descriptor)return;Object.defineProperty(target,property,{enumerable:descriptor.enumerable,configurable:descriptor.configurable,writable:descriptor.writable,value:descriptor.initializer?descriptor.initializer.call(context):void 0});}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _applyDecoratedDescriptor(target,property,decorators,descriptor,context){var desc={};Object['ke'+'ys'](descriptor).forEach(function(key){desc[key]=descriptor[key];});desc.enumerable=!!desc.enumerable;desc.configurable=!!desc.configurable;if('value'in desc||desc.initializer){desc.writable=true;}desc=decorators.slice().reverse().reduce(function(desc,decorator){return decorator(target,property,desc)||desc;},desc);if(context&&desc.initializer!==void 0){desc.value=desc.initializer?desc.initializer.call(context):void 0;desc.initializer=undefined;}if(desc.initializer===void 0){Object['define'+'Property'](target,property,desc);desc=null;}return desc;}function _initializerWarningHelper(descriptor,context){throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');}var RoommateInvite=(_class=function(){// Model Attributes
-	function RoommateInvite(){var _this=this;var data=arguments.length<=0||arguments[0]===undefined?{}:arguments[0];var store=arguments[1];_classCallCheck(this,RoommateInvite);this.uuid=_uuid2.default.v4();_initDefineProp(this,"first_name",_descriptor,this);_initDefineProp(this,"last_name",_descriptor2,this);_initDefineProp(this,"email",_descriptor3,this);_initDefineProp(this,"errors",_descriptor4,this);this.store=null;this.validateFirstName=function(){if(!_this.first_name.length){_this.errors["first_name"]="Please enter a first name";}};this.validateLastName=function(){if(!_this.last_name.length){_this.errors["last_name"]="Please enter a last name";}};this.validateEmail=function(){var re=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;if(!re.test(_this.email)){_this.errors["email"]="Please enter a valid email address";}};this.validate=function(){_this.errors={};// this.validateFirstName()
-	// this.validateLastName()
-	_this.validateEmail();return Object.keys(_this.errors).length;};this.asJSON=function(){return{first_name:_this.first_name,last_name:_this.last_name,email:_this.email};};this.findInvitee=function(){return _this.store.roommates.findIndex(function(roommate){return roommate.uuid===_this.uuid;});};Object.assign(this,data);this.store=store;}// Reference
-	_createClass(RoommateInvite,[{key:"fullName",get:function get(){return this.first_name+" "+this.last_name;}},{key:"userNumber",get:function get(){if(this.email.length){return"( "+this.email+" )";}else{return"#"+(this.email||this.findInvitee()+1);}}}]);return RoommateInvite;}(),(_descriptor=_applyDecoratedDescriptor(_class.prototype,"first_name",[_mobx.observable],{enumerable:true,initializer:function initializer(){return"";}}),_descriptor2=_applyDecoratedDescriptor(_class.prototype,"last_name",[_mobx.observable],{enumerable:true,initializer:function initializer(){return"";}}),_descriptor3=_applyDecoratedDescriptor(_class.prototype,"email",[_mobx.observable],{enumerable:true,initializer:function initializer(){return"";}}),_descriptor4=_applyDecoratedDescriptor(_class.prototype,"errors",[_mobx.observable],{enumerable:true,initializer:function initializer(){return{};}}),_applyDecoratedDescriptor(_class.prototype,"fullName",[_mobx.computed],Object.getOwnPropertyDescriptor(_class.prototype,"fullName"),_class.prototype),_applyDecoratedDescriptor(_class.prototype,"userNumber",[_mobx.computed],Object.getOwnPropertyDescriptor(_class.prototype,"userNumber"),_class.prototype)),_class);exports.default=RoommateInvite;
+	"use strict";Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _desc,_value,_class,_descriptor,_descriptor2,_descriptor3;var _mobx=__webpack_require__(175);var _RoommateInvite=__webpack_require__(180);var _RoommateInvite2=_interopRequireDefault(_RoommateInvite);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _initDefineProp(target,property,descriptor,context){if(!descriptor)return;Object.defineProperty(target,property,{enumerable:descriptor.enumerable,configurable:descriptor.configurable,writable:descriptor.writable,value:descriptor.initializer?descriptor.initializer.call(context):void 0});}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _applyDecoratedDescriptor(target,property,decorators,descriptor,context){var desc={};Object['ke'+'ys'](descriptor).forEach(function(key){desc[key]=descriptor[key];});desc.enumerable=!!desc.enumerable;desc.configurable=!!desc.configurable;if('value'in desc||desc.initializer){desc.writable=true;}desc=decorators.slice().reverse().reduce(function(desc,decorator){return decorator(target,property,desc)||desc;},desc);if(context&&desc.initializer!==void 0){desc.value=desc.initializer?desc.initializer.call(context):void 0;desc.initializer=undefined;}if(desc.initializer===void 0){Object['define'+'Property'](target,property,desc);desc=null;}return desc;}function _initializerWarningHelper(descriptor,context){throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');}var RoommateStore=(_class=function(){function RoommateStore(){var _this=this;_classCallCheck(this,RoommateStore);_initDefineProp(this,"visible",_descriptor,this);_initDefineProp(this,"roommates",_descriptor2,this);_initDefineProp(this,"errors",_descriptor3,this);this.createModel=function(){var roommate=arguments.length<=0||arguments[0]===undefined?{}:arguments[0];return new _RoommateInvite2.default(roommate,_this);};this.getRoommates=function(){console.log("get");return _this.roommates.slice();};this.validateModels=function(){var pass=true;_this.roommates.map(function(roommate){if(!roommate.validate()){pass=false;}});return pass;};this.asJSON=function(){var json=[];_this.roommates.map(function(roommate){json.push(roommate.asJSON());});return json;};this.handleErrors=function(resp){var data={};resp.errors.map(function(item){return data[item.field]=item.message;});_this.errors=data;};}_createClass(RoommateStore,[{key:"setup",value:function setup(args){Object.assign(this,args);}},{key:"addRoommate",value:function addRoommate(roommate){this.roommates.push(this.createModel(roommate));}},{key:"updateRoommate",value:function updateRoommate(json){var roommate=this.findRoommate(json.uuid);if(!roommate){this.addRoommate(json);}else{roommate.updateRoommate(json);}}},{key:"removeRoommate",value:function removeRoommate(roommate){console.log("remove",roommate.uuid,this.roommates.findIndex(function(obj){return obj.uuid==roommate.uuid;}));this.roommates.splice(this.roommates.findIndex(function(obj){return obj.uuid==roommate.uuid;}),1);}}]);return RoommateStore;}(),(_descriptor=_applyDecoratedDescriptor(_class.prototype,"visible",[_mobx.observable],{enumerable:true,initializer:function initializer(){return false;}}),_descriptor2=_applyDecoratedDescriptor(_class.prototype,"roommates",[_mobx.observable],{enumerable:true,initializer:function initializer(){return[];}}),_descriptor3=_applyDecoratedDescriptor(_class.prototype,"errors",[_mobx.observable],{enumerable:true,initializer:function initializer(){return{};}})),_class);var singleton=new RoommateStore();exports.default=singleton;
 
 /***/ },
 /* 180 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=undefined;var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _desc,_value,_class,_descriptor,_descriptor2,_descriptor3,_descriptor4;var _mobx=__webpack_require__(175);var _uuid=__webpack_require__(181);var _uuid2=_interopRequireDefault(_uuid);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _initDefineProp(target,property,descriptor,context){if(!descriptor)return;Object.defineProperty(target,property,{enumerable:descriptor.enumerable,configurable:descriptor.configurable,writable:descriptor.writable,value:descriptor.initializer?descriptor.initializer.call(context):void 0});}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _applyDecoratedDescriptor(target,property,decorators,descriptor,context){var desc={};Object['ke'+'ys'](descriptor).forEach(function(key){desc[key]=descriptor[key];});desc.enumerable=!!desc.enumerable;desc.configurable=!!desc.configurable;if('value'in desc||desc.initializer){desc.writable=true;}desc=decorators.slice().reverse().reduce(function(desc,decorator){return decorator(target,property,desc)||desc;},desc);if(context&&desc.initializer!==void 0){desc.value=desc.initializer?desc.initializer.call(context):void 0;desc.initializer=undefined;}if(desc.initializer===void 0){Object['define'+'Property'](target,property,desc);desc=null;}return desc;}function _initializerWarningHelper(descriptor,context){throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');}var RoommateInvite=(_class=function(){// Model Attributes
+	function RoommateInvite(){var _this=this;var data=arguments.length<=0||arguments[0]===undefined?{}:arguments[0];var store=arguments[1];_classCallCheck(this,RoommateInvite);this.uuid=_uuid2.default.v4();_initDefineProp(this,"first_name",_descriptor,this);_initDefineProp(this,"last_name",_descriptor2,this);_initDefineProp(this,"email",_descriptor3,this);_initDefineProp(this,"errors",_descriptor4,this);this.store=null;this.validateFirstName=function(){if(!_this.first_name.length){_this.errors["first_name"]="Please enter a first name";}};this.validateLastName=function(){if(!_this.last_name.length){_this.errors["last_name"]="Please enter a last name";}};this.validateEmail=function(){var re=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;if(!re.test(_this.email)){_this.errors["email"]="Please enter a valid email address";}};this.validate=function(){_this.errors={};// this.validateFirstName()
+	// this.validateLastName()
+	_this.validateEmail();return!Object.keys(_this.errors).length;};this.asJSON=function(){return{first_name:_this.first_name,last_name:_this.last_name,email:_this.email};};this.findInvitee=function(){console.log("find",_this.store.roommates.findIndex(function(roommate){return roommate.uuid===_this.uuid;})+1);return _this.store.roommates.findIndex(function(roommate){return roommate.uuid===_this.uuid;})+1;};console.log("con",this.uuid);Object.assign(this,data);this.store=store;}// Reference
+	_createClass(RoommateInvite,[{key:"fullName",get:function get(){return this.first_name+" "+this.last_name;}},{key:"userNumber",get:function get(){if(this.email.length){return"( "+this.email+" )";}else{return"#"+this.findInvitee();}}}]);return RoommateInvite;}(),(_descriptor=_applyDecoratedDescriptor(_class.prototype,"first_name",[_mobx.observable],{enumerable:true,initializer:function initializer(){return"";}}),_descriptor2=_applyDecoratedDescriptor(_class.prototype,"last_name",[_mobx.observable],{enumerable:true,initializer:function initializer(){return"";}}),_descriptor3=_applyDecoratedDescriptor(_class.prototype,"email",[_mobx.observable],{enumerable:true,initializer:function initializer(){return"";}}),_descriptor4=_applyDecoratedDescriptor(_class.prototype,"errors",[_mobx.observable],{enumerable:true,initializer:function initializer(){return{};}}),_applyDecoratedDescriptor(_class.prototype,"fullName",[_mobx.computed],Object.getOwnPropertyDescriptor(_class.prototype,"fullName"),_class.prototype),_applyDecoratedDescriptor(_class.prototype,"userNumber",[_mobx.computed],Object.getOwnPropertyDescriptor(_class.prototype,"userNumber"),_class.prototype)),_class);exports.default=RoommateInvite;
+
+/***/ },
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//     uuid.js
@@ -24082,7 +24088,7 @@
 	// Unique ID creation requires a high quality random # generator.  We feature
 	// detect to determine the best RNG source, normalizing to a function that
 	// returns 128-bits of randomness, since that's what's usually required
-	var _rng = __webpack_require__(181);
+	var _rng = __webpack_require__(182);
 
 	// Maps for number <-> hex string conversion
 	var _byteToHex = [];
@@ -24260,7 +24266,7 @@
 
 
 /***/ },
-/* 181 */
+/* 182 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {
@@ -24298,7 +24304,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 182 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24307,34 +24313,34 @@
 
 	function _interopRequire(obj) { return obj && obj.__esModule ? obj['default'] : obj; }
 
-	var _Motion = __webpack_require__(183);
+	var _Motion = __webpack_require__(184);
 
 	exports.Motion = _interopRequire(_Motion);
 
-	var _StaggeredMotion = __webpack_require__(190);
+	var _StaggeredMotion = __webpack_require__(191);
 
 	exports.StaggeredMotion = _interopRequire(_StaggeredMotion);
 
-	var _TransitionMotion = __webpack_require__(191);
+	var _TransitionMotion = __webpack_require__(192);
 
 	exports.TransitionMotion = _interopRequire(_TransitionMotion);
 
-	var _spring = __webpack_require__(193);
+	var _spring = __webpack_require__(194);
 
 	exports.spring = _interopRequire(_spring);
 
-	var _presets = __webpack_require__(194);
+	var _presets = __webpack_require__(195);
 
 	exports.presets = _interopRequire(_presets);
 
 	// deprecated, dummy warning function
 
-	var _reorderKeys = __webpack_require__(195);
+	var _reorderKeys = __webpack_require__(196);
 
 	exports.reorderKeys = _interopRequire(_reorderKeys);
 
 /***/ },
-/* 183 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24345,27 +24351,27 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _mapToZero = __webpack_require__(184);
+	var _mapToZero = __webpack_require__(185);
 
 	var _mapToZero2 = _interopRequireDefault(_mapToZero);
 
-	var _stripStyle = __webpack_require__(185);
+	var _stripStyle = __webpack_require__(186);
 
 	var _stripStyle2 = _interopRequireDefault(_stripStyle);
 
-	var _stepper3 = __webpack_require__(186);
+	var _stepper3 = __webpack_require__(187);
 
 	var _stepper4 = _interopRequireDefault(_stepper3);
 
-	var _performanceNow = __webpack_require__(187);
+	var _performanceNow = __webpack_require__(188);
 
 	var _performanceNow2 = _interopRequireDefault(_performanceNow);
 
-	var _raf = __webpack_require__(188);
+	var _raf = __webpack_require__(189);
 
 	var _raf2 = _interopRequireDefault(_raf);
 
-	var _shouldStopAnimation = __webpack_require__(189);
+	var _shouldStopAnimation = __webpack_require__(190);
 
 	var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
 
@@ -24580,7 +24586,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 184 */
+/* 185 */
 /***/ function(module, exports) {
 
 	
@@ -24604,7 +24610,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 185 */
+/* 186 */
 /***/ function(module, exports) {
 
 	
@@ -24630,7 +24636,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 186 */
+/* 187 */
 /***/ function(module, exports) {
 
 	
@@ -24678,7 +24684,7 @@
 	// array reference around.
 
 /***/ },
-/* 187 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {// Generated by CoffeeScript 1.7.1
@@ -24717,10 +24723,10 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 188 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {var now = __webpack_require__(187)
+	/* WEBPACK VAR INJECTION */(function(global) {var now = __webpack_require__(188)
 	  , root = typeof window === 'undefined' ? global : window
 	  , vendors = ['moz', 'webkit']
 	  , suffix = 'AnimationFrame'
@@ -24796,7 +24802,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 189 */
+/* 190 */
 /***/ function(module, exports) {
 
 	
@@ -24832,7 +24838,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 190 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24843,27 +24849,27 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _mapToZero = __webpack_require__(184);
+	var _mapToZero = __webpack_require__(185);
 
 	var _mapToZero2 = _interopRequireDefault(_mapToZero);
 
-	var _stripStyle = __webpack_require__(185);
+	var _stripStyle = __webpack_require__(186);
 
 	var _stripStyle2 = _interopRequireDefault(_stripStyle);
 
-	var _stepper3 = __webpack_require__(186);
+	var _stepper3 = __webpack_require__(187);
 
 	var _stepper4 = _interopRequireDefault(_stepper3);
 
-	var _performanceNow = __webpack_require__(187);
+	var _performanceNow = __webpack_require__(188);
 
 	var _performanceNow2 = _interopRequireDefault(_performanceNow);
 
-	var _raf = __webpack_require__(188);
+	var _raf = __webpack_require__(189);
 
 	var _raf2 = _interopRequireDefault(_raf);
 
-	var _shouldStopAnimation = __webpack_require__(189);
+	var _shouldStopAnimation = __webpack_require__(190);
 
 	var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
 
@@ -25099,7 +25105,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 191 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25110,31 +25116,31 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _mapToZero = __webpack_require__(184);
+	var _mapToZero = __webpack_require__(185);
 
 	var _mapToZero2 = _interopRequireDefault(_mapToZero);
 
-	var _stripStyle = __webpack_require__(185);
+	var _stripStyle = __webpack_require__(186);
 
 	var _stripStyle2 = _interopRequireDefault(_stripStyle);
 
-	var _stepper3 = __webpack_require__(186);
+	var _stepper3 = __webpack_require__(187);
 
 	var _stepper4 = _interopRequireDefault(_stepper3);
 
-	var _mergeDiff = __webpack_require__(192);
+	var _mergeDiff = __webpack_require__(193);
 
 	var _mergeDiff2 = _interopRequireDefault(_mergeDiff);
 
-	var _performanceNow = __webpack_require__(187);
+	var _performanceNow = __webpack_require__(188);
 
 	var _performanceNow2 = _interopRequireDefault(_performanceNow);
 
-	var _raf = __webpack_require__(188);
+	var _raf = __webpack_require__(189);
 
 	var _raf2 = _interopRequireDefault(_raf);
 
-	var _shouldStopAnimation = __webpack_require__(189);
+	var _shouldStopAnimation = __webpack_require__(190);
 
 	var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
 
@@ -25592,7 +25598,7 @@
 	// that you've unmounted but that's still animating. This is where it lives
 
 /***/ },
-/* 192 */
+/* 193 */
 /***/ function(module, exports) {
 
 	
@@ -25705,7 +25711,7 @@
 	// to loop through and find a key's index each time), but I no longer care
 
 /***/ },
-/* 193 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25718,7 +25724,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _presets = __webpack_require__(194);
+	var _presets = __webpack_require__(195);
 
 	var _presets2 = _interopRequireDefault(_presets);
 
@@ -25733,7 +25739,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 194 */
+/* 195 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -25748,7 +25754,7 @@
 	module.exports = exports["default"];
 
 /***/ },
-/* 195 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
