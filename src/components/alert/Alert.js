@@ -1,14 +1,36 @@
 import React from "react"
-import Roomate from "./Roomate"
+import Roommate from "./Roommate"
+import RoommateStore from "../../stores/Roommate"
+import { observer } from "mobx-react"
 
+@observer
 export default class Alert extends React.Component {
+
+  componentDidMount() {
+    console.log("here")
+    RoommateStore.addRoommate()
+  }
+
+  componentWillUpdate() {
+    console.log("will update")
+  }
+
+  handleAdd = (ev)=> {
+    ev.preventDefault()
+    RoommateStore.addRoommate()
+  }
+
+  handleSubmit = (ev)=>{
+    ev.preventDefault()
+    if (RoommateStore.validateModels()) {
+      console.log(RoommateStore.asJSON())
+    }
+  }
 
   handleClose = (ev)=> {
     ev.preventDefault()
     alert("close")
   }
-
-
 
   render() {
     return (
@@ -21,12 +43,18 @@ export default class Alert extends React.Component {
           </legend>
 
           <fieldset>
-            <Roomate />
+            { RoommateStore.getRoommates().map((roommate, i) =>
+              <Roommate key={i} roommate={roommate}/>
+            ) }
           </fieldset>
 
+        { (RoommateStore.getRoommates().length < 5) &&
+          <a className="add" onClick={this.handleAdd}>+ Add another roommate</a>
+        }
+
           <div className="btns">
-            <button className="btn">Nevermind</button>
-            <button className="btn orange">Send Invites</button>
+            <button className="btn" onClick={this.handleClose}>Nevermind</button>
+            <button className="btn orange" onClick={this.handleSubmit}>Send Invites</button>
           </div>
         </form>
       </div>

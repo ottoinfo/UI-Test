@@ -1,6 +1,7 @@
 @import "~purecss";
 
 // Variables
+$padding: 20px;
 $radius: 7px;
 $border: 1px solid rgb(199,204,209);
 $white: #fff;
@@ -8,7 +9,8 @@ $orange: rgb(244,159,61); // Error || Button
 $blue:  rgb(24,96,177); // Link
 $black: rgb(50,50,51); // Title || Form
 $grey: rgb(86,87,88); // Text
-$light-grey: rgb(167,16,170); // Rmove Roomate
+$light-grey: rgb(158,160,162); // Rmove Roomate
+
 
 // Reset
 * {
@@ -39,18 +41,98 @@ $light-grey: rgb(167,16,170); // Rmove Roomate
     border: $border;
     padding: 40px;
   }
+  a {
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
 }
 
 #alert {
   form {
+    width: 480px;
+    position: relative;
     background: $white;
     border-radius: $radius;
     legend {
       text-align: center;
+      font-weight: 500;
+      color: $grey;
       .title {
         color: $black;
-        font-weight: 500;
         font-size: 1.5em;
+      }
+    }
+    .close {
+      position: absolute;
+      top: $padding;
+      right: $padding;
+      font-weight: 500;
+      color: $light-grey;
+      &:hover {
+        color: $grey;
+      }
+    }
+    .add {
+      color: $blue;
+      font-weight: 500;
+      opacity: 0.7;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .roommate {
+    .remove {
+      display: block;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: $border;
+      font-weight: 500;
+      span {
+        vertical-align: top;
+      }
+    }
+    .one-col, .two-col {
+      position: relative;
+      label {
+        font-size: 0.857em;
+        position: absolute;
+        top: 7px;
+        left: 10px;
+        margin: 0;
+        padding: 0;
+        color: $grey;
+      }
+      input {
+        width: 100%;
+        margin: 0;
+        padding: 25px 10px 5px;
+        color: $black;
+      }
+    }
+    .two-col {
+      display: inline-block;
+      width: 50%;
+      input {
+        width: auto;
+        margin-right: 10px;
+      }
+      + .two-col {
+        label {
+          left: 15px;
+        }
+        input {
+          margin-left: 10px;
+          margin-right: 0;
+        }
+      }
+    }
+    .error {
+      input {
+        border-color: $orange;
+      }
+      label {
+        color: $orange;
       }
     }
   }

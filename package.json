@@ -15,11 +15,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ottoinfo/ui-test.git"
+    "url": "git+https://github.com/ottoinfo/UI-Test.git"
   },
   "author": "Matthew Otto <matt@ottoinfo.com> (http://ottoinfo.com/)",
   "license": "ISC",
   "dependencies": {
+    "mobx": "^2.4.1",
+    "mobx-react": "^3.5.1",
     "react": "^15.2.1",
     "react-dom": "^15.2.1"
   },
