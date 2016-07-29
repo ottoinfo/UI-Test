@@ -54,7 +54,9 @@ export default class Alert extends React.Component {
 
           <div className="btns">
             <button className="btn" onClick={this.handleClose}>Nevermind</button>
+          { !RoommateStore.getRoommates().length &&
             <button className="btn orange" onClick={this.handleSubmit}>Send Invites</button>
+          }
           </div>
         </form>
       </div>

@@ -1,11 +1,18 @@
-Speedometer Project
+UI Test Project
 -------------------
 
-Working Example [GitHub App](https://ottoinfo.github.io/speedometer/)
+Working Example [GitHub App](https://ottoinfo.github.io/UI-Test/)
 
-Quick build of a draggable SVG component. Create two SVGs using [Raphael JS](https://github.com/DmitryBaranovskiy/raphael)
+[CodePen Challenge](http://codepen.io/ElGrecode/pen/NAzkya)
 
-Think you may want to try out a SVG Image Library like [SnapSVG](http://snapsvg.io/) for default path
+Trying to create something that looks like this
+
+![alt tag](http://i.imgur.com/047pCX3.png)
+
+Todos:
+  Error Messaging
+  Styling (70% done)
+
 
 
 Install/Run Locally

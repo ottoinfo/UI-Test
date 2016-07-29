@@ -140,6 +140,10 @@ $light-grey: rgb(158,160,162); // Rmove Roomate
         color: $orange;
       }
     }
+    p.error {
+      color: $orange;
+      font-size: 0.857em;
+    }
   }
 }
 
