@@ -3,12 +3,6 @@ UI Test Project
 
 Working Example [GitHub App](https://ottoinfo.github.io/UI-Test/)
 
-***BUG*** 
----------
-
-WIP: If you delete a user in the middle or before INDEX's incorrectly
-
-
 Check WebBrowser Console for JSON Data ( Need to move into a Alert )
 
 [CodePen Challenge](http://codepen.io/ottoinfo/pen/RRBKZR)
@@ -49,11 +43,10 @@ Features:
   * Remove all users and "Send invites" button disappears
   * Add 5 users and "Add another roommate" button disappears
 
-Todos:
-  * Alert Animation and Overlay w/ React-Motion
-  * Error Messaging
-  * Styling (70% done)
-  * Bugs/Test
+***BUGS*** 
+---------
+  * Not clearing out current roommates. Just not worried currently
+  * WIP: If you delete a user in the middle or before app will INDEX incorrectly
 
 Install/Run Locally
 -------------------
