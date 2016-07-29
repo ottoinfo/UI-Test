@@ -949,6 +949,10 @@ td, th {
   transition: all .5s ease-in-out;
 }
 
+#alert span {
+  vertical-align: top;
+}
+
 #alert form {
   width: 480px;
   position: relative;
@@ -961,16 +965,21 @@ td, th {
   font-weight: 500;
   color: #565758;
   border: none;
+  margin: 0;
 }
 
 #alert form legend p {
   font-size: 1em;
+  margin: 10px 0 0;
 }
 
 #alert form legend .title {
   color: #323233;
   font-size: 1.5em;
-  margin-bottom: 10px;
+}
+
+#alert form fieldset {
+  margin: 0 0 20px;
 }
 
 #alert form .close {
@@ -989,25 +998,31 @@ td, th {
   color: #1860b1;
   font-weight: 500;
   opacity: 0.7;
+  margin: 0;
 }
 
 #alert form .add:hover {
   opacity: 1;
 }
 
+#alert form .add span {
+  margin-right: 10px;
+}
+
 #alert .roommate .remove {
   display: block;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
+  margin: 20px 0 0;
   border-bottom: 1px solid #c7ccd1;
   font-weight: 500;
 }
 
 #alert .roommate .remove span {
-  vertical-align: top;
+  margin-right: 10px;
 }
 
 #alert .roommate .one-col, #alert .roommate .two-col {
+  margin-top: 20px;
   position: relative;
 }
 
@@ -1056,12 +1071,18 @@ td, th {
 }
 
 #alert .roommate p.error {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  margin: 0;
   color: #f49f3d;
-  font-size: 0.857em;
+  font-size: 0.750em;
 }
 
 .btns {
+  border-top: 1px solid #c7ccd1;
   margin-top: 30px;
+  padding-top: 30px;
 }
 
 .btns button + button {

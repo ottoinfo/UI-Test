@@ -44,16 +44,15 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(1);
+	__webpack_require__(177);
+	__webpack_require__(176);
+	__webpack_require__(2);
+	__webpack_require__(34);
+	module.exports = __webpack_require__(180);
 
 
 /***/ },
-/* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";var _react=__webpack_require__(2);var _react2=_interopRequireDefault(_react);var _reactDom=__webpack_require__(34);var _reactDom2=_interopRequireDefault(_reactDom);var _App=__webpack_require__(173);var _App2=_interopRequireDefault(_App);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}_reactDom2.default.render(_react2.default.createElement(_App2.default,null),document.getElementById("app"));
-
-/***/ },
+/* 1 */,
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -21086,24 +21085,9 @@
 	module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
-/* 173 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=undefined;var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(2);var _react2=_interopRequireDefault(_react);var _Alert=__webpack_require__(174);var _Alert2=_interopRequireDefault(_Alert);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var App=function(_React$Component){_inherits(App,_React$Component);function App(){var _Object$getPrototypeO;var _temp,_this,_ret;_classCallCheck(this,App);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_Object$getPrototypeO=Object.getPrototypeOf(App)).call.apply(_Object$getPrototypeO,[this].concat(args))),_this),_this.handleInvite=function(ev){ev.preventDefault();},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(App,[{key:"render",value:function render(){return _react2.default.createElement("div",{id:"wrapper"},_react2.default.createElement("form",{onSubmit:this.handleInvite},_react2.default.createElement("p",null,"So you found the right place. Invite your roomates."),_react2.default.createElement("button",{className:"btn blue"},"Invite")),_react2.default.createElement(_Alert2.default,null));}}]);return App;}(_react2.default.Component);exports.default=App;
-
-/***/ },
-/* 174 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=undefined;var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _class;var _react=__webpack_require__(2);var _react2=_interopRequireDefault(_react);var _Roommate=__webpack_require__(175);var _Roommate2=_interopRequireDefault(_Roommate);var _Roommate3=__webpack_require__(178);var _Roommate4=_interopRequireDefault(_Roommate3);var _mobxReact=__webpack_require__(176);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Alert=(0,_mobxReact.observer)(_class=function(_React$Component){_inherits(Alert,_React$Component);function Alert(){var _Object$getPrototypeO;var _temp,_this,_ret;_classCallCheck(this,Alert);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_Object$getPrototypeO=Object.getPrototypeOf(Alert)).call.apply(_Object$getPrototypeO,[this].concat(args))),_this),_this.handleAdd=function(ev){ev.preventDefault();_Roommate4.default.addRoommate();},_this.handleSubmit=function(ev){ev.preventDefault();if(_Roommate4.default.validateModels()){console.log(_Roommate4.default.asJSON());}},_this.handleClose=function(ev){ev.preventDefault();alert("close");},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(Alert,[{key:"componentDidMount",value:function componentDidMount(){console.log("here");_Roommate4.default.addRoommate();}},{key:"componentWillUpdate",value:function componentWillUpdate(){console.log("will update");}},{key:"render",value:function render(){return _react2.default.createElement("div",{id:"alert"},_react2.default.createElement("form",null,_react2.default.createElement("a",{className:"close",onClick:this.handleClose},"X"),_react2.default.createElement("legend",null,_react2.default.createElement("p",{className:"title"},"Invite roomates"),_react2.default.createElement("p",null,"We'll send your roommates an invite after you've",_react2.default.createElement("br",null),"finished setting up your rent payment.")),_react2.default.createElement("fieldset",null,_Roommate4.default.getRoommates().map(function(roommate,i){return _react2.default.createElement(_Roommate2.default,{key:i,roommate:roommate});})),_Roommate4.default.getRoommates().length<5&&_react2.default.createElement("a",{className:"add",onClick:this.handleAdd},"+ Add another roommate"),_react2.default.createElement("div",{className:"btns"},_react2.default.createElement("button",{className:"btn",onClick:this.handleClose},"Nevermind"),_Roommate4.default.getRoommates().length!=0&&_react2.default.createElement("button",{className:"btn orange",onClick:this.handleSubmit},"Send Invites"))));}}]);return Alert;}(_react2.default.Component))||_class;exports.default=Alert;
-
-/***/ },
-/* 175 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=undefined;var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _class,_class2,_temp;var _react=__webpack_require__(2);var _react2=_interopRequireDefault(_react);var _mobxReact=__webpack_require__(176);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Roommate=(0,_mobxReact.observer)(_class=(_temp=_class2=function(_React$Component){_inherits(Roommate,_React$Component);function Roommate(props,context){_classCallCheck(this,Roommate);var _this=_possibleConstructorReturn(this,Object.getPrototypeOf(Roommate).call(this,props,context));_this.handleInputChange=function(ev){var target=ev.target;_this.roommate[target.name]=target.value;console.log("input",_this.roommate);};_this.checkValidation=function(ev){console.log(ev);};_this.handleRemove=function(ev){ev.preventDefault();_this.roommate.store.removeRoommate(_this.roommate);};_this.roommate=props.roommate;return _this;}_createClass(Roommate,[{key:"render",value:function render(){var roommate=this.roommate;return _react2.default.createElement("div",{className:"roommate"},_react2.default.createElement("a",{className:"remove",onClick:this.handleRemove},"X Remove roommate ",_react2.default.createElement("span",null,roommate.fullName)),_react2.default.createElement("div",{className:roommate.errors.first_name?"two-col error":"two-col"},_react2.default.createElement("label",{htmlFor:"first_name"},"First Name"),_react2.default.createElement("input",{type:"text",name:"first_name",value:roommate.first_name,onChange:this.handleInputChange}),_react2.default.createElement("p",{className:"error"},roommate.errors.first_name)),_react2.default.createElement("div",{className:roommate.errors.last_name?"two-col error":"two-col"},_react2.default.createElement("label",{htmlFor:"last_name"},"Last Name"),_react2.default.createElement("input",{type:"text",name:"last_name",value:roommate.last_name,onChange:this.handleInputChange}),_react2.default.createElement("p",{className:"error"},roommate.errors.last_name)),_react2.default.createElement("div",{className:roommate.errors.email?"one-col error":"one-col"},_react2.default.createElement("label",{htmlFor:"email"},"Email Address"),_react2.default.createElement("input",{onBlur:this.checkValidation,type:"text",name:"email",value:roommate.email,onChange:this.handleInputChange}),_react2.default.createElement("p",{className:"error"},roommate.errors.email)));}}]);return Roommate;}(_react2.default.Component),_class2.propTypes={roommate:_react2.default.PropTypes.object},_temp))||_class;exports.default=Roommate;
-
-/***/ },
+/* 173 */,
+/* 174 */,
+/* 175 */,
 /* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -24054,17 +24038,233 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 178 */
+/* 178 */,
+/* 179 */,
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _desc,_value,_class,_descriptor,_descriptor2;var _mobx=__webpack_require__(177);var _RoommateInvite=__webpack_require__(179);var _RoommateInvite2=_interopRequireDefault(_RoommateInvite);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _initDefineProp(target,property,descriptor,context){if(!descriptor)return;Object.defineProperty(target,property,{enumerable:descriptor.enumerable,configurable:descriptor.configurable,writable:descriptor.writable,value:descriptor.initializer?descriptor.initializer.call(context):void 0});}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _applyDecoratedDescriptor(target,property,decorators,descriptor,context){var desc={};Object['ke'+'ys'](descriptor).forEach(function(key){desc[key]=descriptor[key];});desc.enumerable=!!desc.enumerable;desc.configurable=!!desc.configurable;if('value'in desc||desc.initializer){desc.writable=true;}desc=decorators.slice().reverse().reduce(function(desc,decorator){return decorator(target,property,desc)||desc;},desc);if(context&&desc.initializer!==void 0){desc.value=desc.initializer?desc.initializer.call(context):void 0;desc.initializer=undefined;}if(desc.initializer===void 0){Object['define'+'Property'](target,property,desc);desc=null;}return desc;}function _initializerWarningHelper(descriptor,context){throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');}var RoommateStore=(_class=function(){function RoommateStore(){var _this=this;_classCallCheck(this,RoommateStore);_initDefineProp(this,"roommates",_descriptor,this);_initDefineProp(this,"errors",_descriptor2,this);this.createModel=function(){var user=arguments.length<=0||arguments[0]===undefined?{}:arguments[0];return new _RoommateInvite2.default(user,_this);};this.getRoommates=function(){return _this.roommates.slice();};this.validateModels=function(){var pass=true;_this.roommates.map(function(roommate){if(!roommate.validate()){pass=false;}});return pass;};this.asJSON=function(){var json=[];_this.roommates.map(function(roommate){json.push(roommate.asJSON());});return json;};this.handleErrors=function(resp){var data={};resp.errors.map(function(item){return data[item.field]=item.message;});_this.errors=data;};}_createClass(RoommateStore,[{key:"setup",value:function setup(args){Object.assign(this,args);}},{key:"addRoommate",value:function addRoommate(user){this.roommates.push(this.createModel(user));}},{key:"updateRoommate",value:function updateRoommate(json){var user=this.findRoommate(json.id);if(!user){this.addRoommate(json);}else{user.updateRoommate(json);}}},{key:"removeRoommate",value:function removeRoommate(user){this.roommates.splice(this.roommates.findIndex(function(obj){return obj.id==user.id;}),1);}}]);return RoommateStore;}(),(_descriptor=_applyDecoratedDescriptor(_class.prototype,"roommates",[_mobx.observable],{enumerable:true,initializer:function initializer(){return[];}}),_descriptor2=_applyDecoratedDescriptor(_class.prototype,"errors",[_mobx.observable],{enumerable:true,initializer:function initializer(){return{};}})),_class);var singleton=new RoommateStore();exports.default=singleton;
+	//     uuid.js
+	//
+	//     Copyright (c) 2010-2012 Robert Kieffer
+	//     MIT License - http://opensource.org/licenses/mit-license.php
+
+	// Unique ID creation requires a high quality random # generator.  We feature
+	// detect to determine the best RNG source, normalizing to a function that
+	// returns 128-bits of randomness, since that's what's usually required
+	var _rng = __webpack_require__(181);
+
+	// Maps for number <-> hex string conversion
+	var _byteToHex = [];
+	var _hexToByte = {};
+	for (var i = 0; i < 256; i++) {
+	  _byteToHex[i] = (i + 0x100).toString(16).substr(1);
+	  _hexToByte[_byteToHex[i]] = i;
+	}
+
+	// **`parse()` - Parse a UUID into it's component bytes**
+	function parse(s, buf, offset) {
+	  var i = (buf && offset) || 0, ii = 0;
+
+	  buf = buf || [];
+	  s.toLowerCase().replace(/[0-9a-f]{2}/g, function(oct) {
+	    if (ii < 16) { // Don't overflow!
+	      buf[i + ii++] = _hexToByte[oct];
+	    }
+	  });
+
+	  // Zero out remaining bytes if string was short
+	  while (ii < 16) {
+	    buf[i + ii++] = 0;
+	  }
+
+	  return buf;
+	}
+
+	// **`unparse()` - Convert UUID byte array (ala parse()) into a string**
+	function unparse(buf, offset) {
+	  var i = offset || 0, bth = _byteToHex;
+	  return  bth[buf[i++]] + bth[buf[i++]] +
+	          bth[buf[i++]] + bth[buf[i++]] + '-' +
+	          bth[buf[i++]] + bth[buf[i++]] + '-' +
+	          bth[buf[i++]] + bth[buf[i++]] + '-' +
+	          bth[buf[i++]] + bth[buf[i++]] + '-' +
+	          bth[buf[i++]] + bth[buf[i++]] +
+	          bth[buf[i++]] + bth[buf[i++]] +
+	          bth[buf[i++]] + bth[buf[i++]];
+	}
+
+	// **`v1()` - Generate time-based UUID**
+	//
+	// Inspired by https://github.com/LiosK/UUID.js
+	// and http://docs.python.org/library/uuid.html
+
+	// random #'s we need to init node and clockseq
+	var _seedBytes = _rng();
+
+	// Per 4.5, create and 48-bit node id, (47 random bits + multicast bit = 1)
+	var _nodeId = [
+	  _seedBytes[0] | 0x01,
+	  _seedBytes[1], _seedBytes[2], _seedBytes[3], _seedBytes[4], _seedBytes[5]
+	];
+
+	// Per 4.2.2, randomize (14 bit) clockseq
+	var _clockseq = (_seedBytes[6] << 8 | _seedBytes[7]) & 0x3fff;
+
+	// Previous uuid creation time
+	var _lastMSecs = 0, _lastNSecs = 0;
+
+	// See https://github.com/broofa/node-uuid for API details
+	function v1(options, buf, offset) {
+	  var i = buf && offset || 0;
+	  var b = buf || [];
+
+	  options = options || {};
+
+	  var clockseq = options.clockseq !== undefined ? options.clockseq : _clockseq;
+
+	  // UUID timestamps are 100 nano-second units since the Gregorian epoch,
+	  // (1582-10-15 00:00).  JSNumbers aren't precise enough for this, so
+	  // time is handled internally as 'msecs' (integer milliseconds) and 'nsecs'
+	  // (100-nanoseconds offset from msecs) since unix epoch, 1970-01-01 00:00.
+	  var msecs = options.msecs !== undefined ? options.msecs : new Date().getTime();
+
+	  // Per 4.2.1.2, use count of uuid's generated during the current clock
+	  // cycle to simulate higher resolution clock
+	  var nsecs = options.nsecs !== undefined ? options.nsecs : _lastNSecs + 1;
+
+	  // Time since last uuid creation (in msecs)
+	  var dt = (msecs - _lastMSecs) + (nsecs - _lastNSecs)/10000;
+
+	  // Per 4.2.1.2, Bump clockseq on clock regression
+	  if (dt < 0 && options.clockseq === undefined) {
+	    clockseq = clockseq + 1 & 0x3fff;
+	  }
+
+	  // Reset nsecs if clock regresses (new clockseq) or we've moved onto a new
+	  // time interval
+	  if ((dt < 0 || msecs > _lastMSecs) && options.nsecs === undefined) {
+	    nsecs = 0;
+	  }
+
+	  // Per 4.2.1.2 Throw error if too many uuids are requested
+	  if (nsecs >= 10000) {
+	    throw new Error('uuid.v1(): Can\'t create more than 10M uuids/sec');
+	  }
+
+	  _lastMSecs = msecs;
+	  _lastNSecs = nsecs;
+	  _clockseq = clockseq;
+
+	  // Per 4.1.4 - Convert from unix epoch to Gregorian epoch
+	  msecs += 12219292800000;
+
+	  // `time_low`
+	  var tl = ((msecs & 0xfffffff) * 10000 + nsecs) % 0x100000000;
+	  b[i++] = tl >>> 24 & 0xff;
+	  b[i++] = tl >>> 16 & 0xff;
+	  b[i++] = tl >>> 8 & 0xff;
+	  b[i++] = tl & 0xff;
+
+	  // `time_mid`
+	  var tmh = (msecs / 0x100000000 * 10000) & 0xfffffff;
+	  b[i++] = tmh >>> 8 & 0xff;
+	  b[i++] = tmh & 0xff;
+
+	  // `time_high_and_version`
+	  b[i++] = tmh >>> 24 & 0xf | 0x10; // include version
+	  b[i++] = tmh >>> 16 & 0xff;
+
+	  // `clock_seq_hi_and_reserved` (Per 4.2.2 - include variant)
+	  b[i++] = clockseq >>> 8 | 0x80;
+
+	  // `clock_seq_low`
+	  b[i++] = clockseq & 0xff;
+
+	  // `node`
+	  var node = options.node || _nodeId;
+	  for (var n = 0; n < 6; n++) {
+	    b[i + n] = node[n];
+	  }
+
+	  return buf ? buf : unparse(b);
+	}
+
+	// **`v4()` - Generate random UUID**
+
+	// See https://github.com/broofa/node-uuid for API details
+	function v4(options, buf, offset) {
+	  // Deprecated - 'format' argument, as supported in v1.2
+	  var i = buf && offset || 0;
+
+	  if (typeof(options) == 'string') {
+	    buf = options == 'binary' ? new Array(16) : null;
+	    options = null;
+	  }
+	  options = options || {};
+
+	  var rnds = options.random || (options.rng || _rng)();
+
+	  // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+	  rnds[6] = (rnds[6] & 0x0f) | 0x40;
+	  rnds[8] = (rnds[8] & 0x3f) | 0x80;
+
+	  // Copy bytes to buffer, if provided
+	  if (buf) {
+	    for (var ii = 0; ii < 16; ii++) {
+	      buf[i + ii] = rnds[ii];
+	    }
+	  }
+
+	  return buf || unparse(rnds);
+	}
+
+	// Export public API
+	var uuid = v4;
+	uuid.v1 = v1;
+	uuid.v4 = v4;
+	uuid.parse = parse;
+	uuid.unparse = unparse;
+
+	module.exports = uuid;
+
 
 /***/ },
-/* 179 */
-/***/ function(module, exports, __webpack_require__) {
+/* 181 */
+/***/ function(module, exports) {
 
-	"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.default=undefined;var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _desc,_value,_class,_descriptor,_descriptor2,_descriptor3,_descriptor4;var _mobx=__webpack_require__(177);function _initDefineProp(target,property,descriptor,context){if(!descriptor)return;Object.defineProperty(target,property,{enumerable:descriptor.enumerable,configurable:descriptor.configurable,writable:descriptor.writable,value:descriptor.initializer?descriptor.initializer.call(context):void 0});}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _applyDecoratedDescriptor(target,property,decorators,descriptor,context){var desc={};Object['ke'+'ys'](descriptor).forEach(function(key){desc[key]=descriptor[key];});desc.enumerable=!!desc.enumerable;desc.configurable=!!desc.configurable;if('value'in desc||desc.initializer){desc.writable=true;}desc=decorators.slice().reverse().reduce(function(desc,decorator){return decorator(target,property,desc)||desc;},desc);if(context&&desc.initializer!==void 0){desc.value=desc.initializer?desc.initializer.call(context):void 0;desc.initializer=undefined;}if(desc.initializer===void 0){Object['define'+'Property'](target,property,desc);desc=null;}return desc;}function _initializerWarningHelper(descriptor,context){throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');}var RoommateInvite=(_class=function(){function RoommateInvite(){var _this=this;var data=arguments.length<=0||arguments[0]===undefined?{}:arguments[0];var store=arguments[1];_classCallCheck(this,RoommateInvite);_initDefineProp(this,"first_name",_descriptor,this);_initDefineProp(this,"last_name",_descriptor2,this);_initDefineProp(this,"email",_descriptor3,this);_initDefineProp(this,"errors",_descriptor4,this);this.store=null;this.validateFirstName=function(){if(!_this.first_name.length){_this.errors["first_name"]="Please enter a first name";}};this.validateLastName=function(){if(!_this.last_name.length){_this.errors["last_name"]="Please enter a last name";}};this.validateEmail=function(){var re=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;if(!re.test(_this.email)){_this.errors["email"]="Please enter a valid email address";}};this.validate=function(){_this.errors={};_this.validateFirstName();_this.validateLastName();_this.validateEmail();return Object.keys(_this.errors).length;};this.asJSON=function(){return{first_name:_this.first_name,last_name:_this.last_name,email:_this.email};};Object.assign(this,data);this.store=store;}// Reference
-	_createClass(RoommateInvite,[{key:"fullName",get:function get(){return this.first_name+" "+this.last_name;}}]);return RoommateInvite;}(),(_descriptor=_applyDecoratedDescriptor(_class.prototype,"first_name",[_mobx.observable],{enumerable:true,initializer:function initializer(){return"";}}),_descriptor2=_applyDecoratedDescriptor(_class.prototype,"last_name",[_mobx.observable],{enumerable:true,initializer:function initializer(){return"";}}),_descriptor3=_applyDecoratedDescriptor(_class.prototype,"email",[_mobx.observable],{enumerable:true,initializer:function initializer(){return"";}}),_descriptor4=_applyDecoratedDescriptor(_class.prototype,"errors",[_mobx.observable],{enumerable:true,initializer:function initializer(){return{};}}),_applyDecoratedDescriptor(_class.prototype,"fullName",[_mobx.computed],Object.getOwnPropertyDescriptor(_class.prototype,"fullName"),_class.prototype)),_class);exports.default=RoommateInvite;
+	/* WEBPACK VAR INJECTION */(function(global) {
+	var rng;
+
+	if (global.crypto && crypto.getRandomValues) {
+	  // WHATWG crypto-based RNG - http://wiki.whatwg.org/wiki/Crypto
+	  // Moderately fast, high quality
+	  var _rnds8 = new Uint8Array(16);
+	  rng = function whatwgRNG() {
+	    crypto.getRandomValues(_rnds8);
+	    return _rnds8;
+	  };
+	}
+
+	if (!rng) {
+	  // Math.random()-based (RNG)
+	  //
+	  // If all else fails, use Math.random().  It's fast, but is of unspecified
+	  // quality.
+	  var  _rnds = new Array(16);
+	  rng = function() {
+	    for (var i = 0, r; i < 16; i++) {
+	      if ((i & 0x03) === 0) r = Math.random() * 0x100000000;
+	      _rnds[i] = r >>> ((i & 0x03) << 3) & 0xff;
+	    }
+
+	    return _rnds;
+	  };
+	}
+
+	module.exports = rng;
+
+
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ }
 /******/ ]);
