@@ -10,10 +10,10 @@ Trying to create something that looks like this
 ![alt tag](http://i.imgur.com/047pCX3.png)
 
 Todos:
+  Alert Animation and Overlay w/ React-Motion
   Error Messaging
   Styling (70% done)
-
-
+  Bugs/Test
 
 Install/Run Locally
 ===============
