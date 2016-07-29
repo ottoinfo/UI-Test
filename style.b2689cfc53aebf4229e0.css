@@ -944,19 +944,115 @@ td, th {
   padding: 40px;
 }
 
+#app a {
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
 #alert form {
+  width: 480px;
+  position: relative;
   background: #fff;
   border-radius: 7px;
 }
 
 #alert form legend {
   text-align: center;
+  font-weight: 500;
+  color: #565758;
+  border: none;
+}
+
+#alert form legend p {
+  font-size: 1em;
 }
 
 #alert form legend .title {
   color: #323233;
-  font-weight: 500;
   font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#alert form .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: 500;
+  color: #9ea0a2;
+}
+
+#alert form .close:hover {
+  color: #565758;
+}
+
+#alert form .add {
+  color: #1860b1;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+#alert form .add:hover {
+  opacity: 1;
+}
+
+#alert .roommate .remove {
+  display: block;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #c7ccd1;
+  font-weight: 500;
+}
+
+#alert .roommate .remove span {
+  vertical-align: top;
+}
+
+#alert .roommate .one-col, #alert .roommate .two-col {
+  position: relative;
+}
+
+#alert .roommate .one-col label, #alert .roommate .two-col label {
+  font-size: 0.857em;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  margin: 0;
+  padding: 0;
+  color: #565758;
+}
+
+#alert .roommate .one-col input, #alert .roommate .two-col input {
+  width: 100%;
+  margin: 0;
+  padding: 25px 10px 5px;
+  color: #323233;
+}
+
+#alert .roommate .two-col {
+  display: inline-block;
+  width: 50%;
+}
+
+#alert .roommate .two-col input {
+  width: auto;
+  margin-right: 10px;
+}
+
+#alert .roommate .two-col + .two-col label {
+  left: 15px;
+}
+
+#alert .roommate .two-col + .two-col input {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+#alert .roommate .error input {
+  border-color: #f49f3d;
+}
+
+#alert .roommate .error label {
+  color: #f49f3d;
 }
 
 .btns {
