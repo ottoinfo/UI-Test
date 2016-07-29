@@ -38,7 +38,7 @@ Not Codepen. First I didn't want to try to work in limited real estate and I tho
 [React-Motion](https://github.com/chenglou/react-motion) is someting I have been trying to use lately. Helps aleviate unreliable animations.
 
 Features:
-  * Validate all fields and error messaaging
+  * Validate all fields and error messaaging ( first & last check length ) ( email uses general regex )
   * Validate only when user clicks "Send invites"
   * Remove all users and "Send invites" button disappears
   * Add 5 users and "Add another roommate" button disappears
